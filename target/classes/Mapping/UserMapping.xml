@@ -39,4 +39,11 @@
         select * from user
     </select>
 
+    <!-- 根据用户名查找用户-->
+    <select id="getUserByName" resultType="Enity.User">
+        select * from user WHERE name=#{name}
+    </select>
+
+
+
 </mapper>
